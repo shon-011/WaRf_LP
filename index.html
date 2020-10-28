@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="syle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <title>Document</title>
+</head>
+<body>
+<div id="app">
+<v-app>
+<v-main>
+    <div class="topbox"></div>
+    
+    <v-row class="justify-center">
+    <v-col cols="5">
+        <v-row><h1 class="font-weight-medium">What is WaRf</h1></v-row>
+        <v-row>
+            <p class="font-weight-bold"><span class="under">WaRf</span>は短期の求人を出したい求人主と旅をしながら暮らしたい旅行者を繋ぐためのプロダクトです。</p>
+            <p class="font-weight-light">学生時代、年に４回程アルバイトで貯めたお金で旅行に行っていました。
+                しかし、旅行好きな自分はもっと旅行したい、旅をしながら暮らしたいと思っていました。
+                WaRfはそんな旅人のためのプロダクトです。
+            </p>
+        </v-row>
+        <v-row>
+            <p class="font-weight-bold">地方求人の煩雑さを解決したい。</p>
+            <p class="font-weight-light">
+                １つの求人を出すのにもFAXを何通もやりとりして、それでいてなかなか人が集まらないという現状の地方求人。
+                もっと簡単に。そんな思いからWaRfは生まれています。
+            </p>
+        </v-row>
+    </v-col>
+    </v-row>
+    
+</v-main>
+</v-app>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+<script>
+    new Vue({
+    el: '#app',
+    vuetify: new Vuetify(),
+    data:{
+        a:'tttt'
+    },
+    })
+</script>
+</body>
+</html>
