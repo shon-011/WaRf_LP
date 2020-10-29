@@ -1,15 +1,24 @@
 .topbox{
     width: 100vw;
     height: 90vh;
-    background-color: pink;
+    background-color: #b5555a;
+}
+#app{
+    color: rgb(215, 215, 215);
+    background-color: rgb(47, 47, 47);
 }
 
 p{
     font-size: 14px;
-    color: #2c2c2c;
 }
 .under{
     border-bottom:solid;
     border-color:#b5555a;
     border-width:2px;
+}
+.mov{
+    width: 300px;
+}
+.ss{
+    width: 200px;
 }
