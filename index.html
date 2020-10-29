@@ -16,10 +16,10 @@
     <div class="topbox"></div>
     
     <v-row class="justify-center">
-    <v-col class="col-xs-10 col-sm-8 col-md-5">
+    <v-col class="col-10 col-sm-8 col-md-5">
         <v-row><h1 class="font-weight-medium">What is WaRf</h1></v-row>
         <v-row>
-            <p class="font-weight-bold"><span class="under">WaRf</span>は短期の求人を出したい求人主と旅をしながら暮らしたい旅行者を繋ぐためのプロダクトです。</p>
+            <p class="font-weight-bold">WaRfは短期の求人を出したい求人主と旅をしながら暮らしたい旅行者を繋ぐためのプロダクトです。</p>
             <p class="font-weight-light">学生時代、年に４回程アルバイトで貯めたお金で旅行に行っていました。
                 しかし、旅行好きな自分はもっと旅行したい、旅をしながら暮らしたいと思っていました。
                 WaRfはそんな旅人のためのプロダクトです。
@@ -33,11 +33,10 @@
             </p>
         </v-row>
 
-        <v-divider></v-divider>
+        <v-divider color="#c3c3c3"></v-divider>
 
-        <v-row><h1 class="font-weight-medium">How to ...</h1></v-row>
         <v-row>
-            <p class="font-weight-bold">旅先を決めるのも旅行の醍醐味。</p>
+            <h2 class="font-weight-bold text-md-h2 text-h3">旅先を決めるのも、<br><span class="under">旅行の醍醐味。</span></h2>
             <p class="font-weight-light">
                 旅行にとって旅先を決めるのは、とてもワクワクするものです。WaRfの求人掲載は雑誌を一枚一枚めくるようにして見せています。
                 これにより、画面上のワクワクと操作感を大切にしています。
@@ -50,9 +49,9 @@
     </v-row>
 
     <v-row class="justify-center">
-        <v-col class="col-xs-10 col-sm-8 col-md-5">
+        <v-col class="col-10 col-sm-8 col-md-6">
             <v-row>
-                <p class="font-weight-bold">より簡潔に、使いやすく。</p>
+                <h2 class="font-weight-bold text-md-h2 text-h3"><span class="under">より簡潔に、使いやすく。</span></h2>
                 <p class="font-weight-light">
                     求人を出すハードルが高ければ活発なコミュニティは生まれません。フォーマットに沿って入力するだけで、美しい求人が誰でも出すことができます。
                     もちろん、編集も簡単です。
@@ -62,22 +61,79 @@
     </v-row>
         
     <v-row class="justify-center">
-        <v-col class="col-md-2 col-sm-8 col-xs-10"><img src="imges/regi1.png" alt="" class="ss"></v-col> 
-        <v-col class="col-md-2 col-sm-8 col-xs-10"><img src="imges/regi3.png" alt="" class="ss"></v-col> 
-        <v-col class="col-md-2 col-sm-8 col-xs-10"><img src="imges/regi2.png" alt="" class="ss"></v-col> 
+        <v-col class="col-md-2 col-sm-8 col-12"><img src="imges/regi1.png" alt="" class="ss"></v-col> 
+        <v-col class="col-md-2 col-sm-8 col-12"><img src="imges/regi3.png" alt="" class="ss"></v-col> 
+        <v-col class="col-md-2 col-sm-8 col-12"><img src="imges/regi2.png" alt="" class="ss"></v-col> 
     </v-row>
 
     <v-row class="justify-center">
-        <v-col class="col-xs-10 col-sm-8 col-md-5">
-            <v-row>
-                <p class="font-weight-bold">紙を用意する必要はありません。</p>
-                <p class="font-weight-light">
-                    契約を結ぶとき、タイムカードを打つとき、紙は必要ありません。
-                </p>
-            </v-row>
+        <v-col class="col-10 col-sm-8 col-md-6">
+            <v-divider color="#c3c3c3"></v-divider>
         </v-col>
     </v-row>
-    
+
+    <v-row class="justify-center">
+        <v-col class="col-10 col-sm-2 col-md-3">
+            <img src="imges/contract3.png" alt="" class="con">
+        </v-col>
+        <v-col class="col-10 col-sm-4 col-md-6">
+            <h2 class="font-weight-bold text-md-h2 text-h3">紙や新しい機械を<br><span class="under">用意する必要はありません。</span></h2>
+            <p class="font-weight-light">
+                契約を結ぶとき、タイムカードを打つとき、紙や新しい機械は必要ありません。<br>
+                導入する機械もいりません。必要なのはスマートフォン1つです。
+            </p>
+            <img src="imges/sign.png" alt="" class="sign">
+        </v-col>
+    </v-row>
+
+
+    <v-row class="justify-center">
+        <v-col class="col-10 col-sm-8 col-md-6">
+            <v-divider color="#c3c3c3"></v-divider>
+        </v-col>
+    </v-row>
+
+    <v-row class="justify-center">
+        <v-col class="col-10 col-sm-8 col-md-5">
+            <p class="font-weight-bold">スクリーンショット</p>
+        </v-col>
+    </v-row>
+            <!-- User -->
+            <v-sheet
+                class="mx-auto"
+                elevation="0"
+                min-width="80vw"
+                color="rgb(47, 47, 47)"
+            >
+            <v-slide-group
+            class="ma-10"
+            height="200px"
+            active-class="success"
+            >
+                <v-slide-item v-for="user in users" :key="user.id">
+                    <img :src="user.src" alt="user.alt" class="ss ma-5">
+                </v-slide-item>
+            </v-slide-group>
+            </v-sheet>
+
+            <!-- Host -->
+            <v-sheet
+                class="mx-auto"
+                elevation="0"
+                min-width="80vw"
+                color="rgb(47, 47, 47)"
+            >
+            <v-slide-group
+            class="ma-10"
+            height="200px"
+            active-class="success"
+            >
+                <v-slide-item v-for="host in hosts" :key="host.id">
+                    <img :src="host.src" alt="host.alt" class="ss ma-5">
+                </v-slide-item>
+            </v-slide-group>
+            </v-sheet>
+
 </v-main>
 </v-app>
 </div>
@@ -85,11 +141,84 @@
 <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
 <script>
+
+    const users = [
+    {   
+        id: 1,
+        alt: 'LP',
+        src: 'imges/slide/lp.png'
+    },
+    {   
+        id: 2,
+        alt: 'Details',
+        src: 'imges/slide/details1.png'
+    },
+    {   
+        id: 3,
+        alt: 'Details',
+        src: 'imges/slide/details2.png'
+    },
+    {   
+        id: 4,
+        alt: 'Details',
+        src: 'imges/slide/details3.png'
+    },
+    {   
+        id: 5,
+        alt: 'Offers',
+        src: 'imges/slide/job1.png'
+    },
+    {   
+        id: 6,
+        alt: 'Messages',
+        src: 'imges/slide/mes.png'
+    },
+    {   
+        id: 7,
+        alt: 'MyQR',
+        src: 'imges/slide/qr.png'
+    },
+    ]
+
+    const hosts = [
+    {   
+        id: 1,
+        alt: 'Select',
+        src: 'imges/slide/select1.png'
+    },
+    {   
+        id: 2,
+        alt: 'Console',
+        src: 'imges/slide/con2.png'
+    },
+    {   
+        id: 3,
+        alt: 'Console',
+        src: 'imges/slide/time1.png'
+    },
+    {   
+        id: 4,
+        alt: 'Console',
+        src: 'imges/slide/time2.png'
+    },
+    {   
+        id: 5,
+        alt: 'Console',
+        src: 'imges/slide/time3.png'
+    },
+    {   
+        id: 6,
+        alt: 'Console',
+        src: 'imges/slide/time4.png'
+    },
+    ]
+
     new Vue({
     el: '#app',
     vuetify: new Vuetify(),
     data:{
-        a:'tttt'
+        users: users,
+        hosts: hosts,
     },
     })
 </script>

@@ -11,6 +11,10 @@
 p{
     font-size: 14px;
 }
+h2{
+    margin: 15vh 0  5vh 0;
+    line-height: 59px!important;
+}
 .under{
     border-bottom:solid;
     border-color:#b5555a;
@@ -18,7 +22,11 @@ p{
 }
 .mov{
     width: 300px;
+    margin:  30px 0;
 }
 .ss{
     width: 200px;
+}
+.sign{
+    width: 80%;
 }
