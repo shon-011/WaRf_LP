@@ -118,7 +118,7 @@
             active-class="success"
             >
                 <v-slide-item v-for="user in users" :key="user.id">
-                    <img :src="user.src" alt="user.alt" class="ss ma-5">
+                    <v-img :src="user.src" alt="user.alt" class="ss ma-5">
                 </v-slide-item>
             </v-slide-group>
             </v-sheet>
@@ -136,7 +136,7 @@
             active-class="success"
             >
                 <v-slide-item v-for="host in hosts" :key="host.id">
-                    <img :src="host.src" alt="host.alt" class="ss ma-5">
+                    <v-img :src="host.src" alt="host.alt" class="ss ma-5">
                 </v-slide-item>
             </v-slide-group>
             </v-sheet>
