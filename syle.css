@@ -32,3 +32,10 @@ h2{
 .sign{
     width: 80%;
 }
+
+.name{
+    position: absolute;
+    bottom: 0%;
+    font-size: 19vh!important;
+    color: white;
+}
