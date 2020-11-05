@@ -10,6 +10,7 @@
     <title>WaRf | LP</title>
 </head>
 <body>
+<body ontouchmove="event.preventDefault()"></body>
 <div id="app">
 <v-app>
 <v-main>
@@ -62,9 +63,9 @@
     </v-row>
         
     <v-row class="justify-center">
-        <v-col class="col-md-2 col-sm-8 col-12"><img src="imges/regi1.png" alt="" class="ss"></v-col> 
-        <v-col class="col-md-2 col-sm-8 col-12"><img src="imges/regi3.png" alt="" class="ss"></v-col> 
-        <v-col class="col-md-2 col-sm-8 col-12"><img src="imges/regi2.png" alt="" class="ss"></v-col> 
+        <v-col class="col-md-2 col-sm-8 col-12"><v-img src="imges/regi1.png" alt="" class="ss"></v-col> 
+        <v-col class="col-md-2 col-sm-8 col-12"><v-img src="imges/regi3.png" alt="" class="ss"></v-col> 
+        <v-col class="col-md-2 col-sm-8 col-12"><v-img src="imges/regi2.png" alt="" class="ss"></v-col> 
     </v-row>
 
     <v-row class="justify-center">
@@ -75,7 +76,7 @@
 
     <v-row class="justify-center">
         <v-col class="col-10 col-sm-2 col-md-3">
-            <img src="imges/contract3.png" alt="" class="con">
+            <v-img src="imges/contract3.png" alt="" class="con">
         </v-col>
         <v-col class="col-10 col-sm-4 col-md-6">
             <h2 class="font-weight-bold text-md-h2 text-h3">紙や新しい機械を<br><span class="under">用意する必要はありません。</span></h2>
@@ -89,7 +90,7 @@
             <p>
                 タイムカードは旅行者に付与されるQRコードを読み取り、データーベースと照合して行います。
             </p>
-            <img src="imges/sign.png" alt="" class="sign">
+            <v-img src="imges/sign.png" alt="" class="sign">
         </v-col>
     </v-row>
 
@@ -141,6 +142,14 @@
             </v-slide-group>
             </v-sheet>
 
+            <v-row class="justify-center">
+                <h3>WaRf</h3>
+            </v-row>
+
+            <v-row class="justify-center pb-12">
+                <img src="imges/warf_info.png">
+            </v-row>
+
             <v-footer
                 dark
                 padless
@@ -160,9 +169,11 @@
                     class="mx-4 white--text"
                     icon
                     >
+                    <a href="https://github.com/warf-20201020/warf">
                     <v-icon size="24px">
                         {{ icon }}
                     </v-icon>
+                    </a>
                     </v-btn>
                 </v-card-text>
             
@@ -257,6 +268,10 @@
     },
     ]
 
+    window.addEventListener('touchmove', function(event) {
+        event.preventDefault();
+    });
+
     new Vue({
     el: '#app',
     vuetify: new Vuetify(),
@@ -264,10 +279,7 @@
         users: users,
         hosts: hosts,
         icons: [
-        'mdi-facebook',
-        'mdi-twitter',
         'mdi-git',
-        'mdi-instagram',
       ],
     },
     })
