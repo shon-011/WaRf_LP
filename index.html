@@ -21,34 +21,35 @@
  
     
     <v-row class="justify-center">
-    <v-col class="col-10 col-sm-8 col-md-5">
-        <v-row><h1 class="font-weight-medium">What is WaRf</h1></v-row>
-        <v-row>
-            <p class="font-weight-bold">WaRfは短期の求人を出したい求人主と旅をしながら暮らしたい旅行者を繋ぐためのプロダクトです。</p>
-            <p class="font-weight-light">学生時代、年に４回程アルバイトで貯めたお金で旅行に行っていました。
-                しかし、旅行好きな自分はもっと旅行したい、旅をしながら暮らしたいと思っていました。
-                WaRfはそんな旅人のためのプロダクトです。
-            </p>
-        </v-row>
-        <v-row>
-            <p class="font-weight-bold">地方求人の煩雑さを解決したい。</p>
-            <p class="font-weight-light">
-                １つの求人を出すのにもFAXを何通もやりとりして、それでいてなかなか人が集まらないという現状の地方求人。
-                もっと簡単に。そんな思いからWaRfは生まれています。
-            </p>
-        </v-row>
+        <v-col class="col-10 col-sm-8 col-md-5 mt-10">
+            <v-row><h1 class="font-weight-medium">What is WaRf</h1></v-row>
+            <v-row>
+                <p class="font-weight-bold">WaRfは短期の求人を出したい求人主と旅をしながら暮らしたい旅行者を繋ぐためのプロダクトです。</p>
+                <p class="font-weight-light">
+                    これまでの経験を旅先で生かしてみたい。もっと長期間、旅をしていたい。<br>
+                    WaRfはそんな旅人のためのプロダクトです。
+                </p>
+            </v-row>
+            <v-row>
+                <p class="font-weight-bold">地方求人の煩雑さを解決したい。</p>
+                <p class="font-weight-light">
+                    １つの求人を出すのにもFAXを何通もやりとりして、それでいてなかなか人が集まらないという現状の地方求人。<br>
+                    もっと簡単に。そんな思いからWaRfは生まれています。
+                </p>
+            </v-row>
+            <div class="mt-10">
+                <v-divider color="#c3c3c3"></v-divider>
+            </div>
 
-        <v-divider color="#c3c3c3"></v-divider>
-
-        <v-row>
-            <h2 class="font-weight-bold text-md-h2 text-h3">旅先を決めるのも、<br><span class="under">旅行の醍醐味。</span></h2>
-            <p class="font-weight-light">
-                旅行にとって旅先を決めるのは、とてもワクワクするものです。<br>
-                WaRfの求人掲載は雑誌を一枚一枚めくるようにして見せています。
-                これにより画面上のワクワクと操作感を大切にしています。
-            </p>
-        </v-row>
-    </v-col>
+            <v-row>
+                <h2 class="font-weight-bold text-md-h2 text-h3">旅先を決めるのも、<br><span class="under">旅行の醍醐味。</span></h2>
+                <p class="font-weight-light">
+                    旅行にとって旅先を決めるのは、とてもワクワクするものです。<br>
+                    WaRfの求人掲載は雑誌を一枚一枚めくるようにして見せています。
+                    これにより画面上のワクワクと操作感を大切にしています。
+                </p>
+            </v-row>
+        </v-col>
     </v-row>
     <v-row class="justify-center">
         <video src="imges/LP.mp4" playsinline muted loop autoplay class="mov"></video>
@@ -65,12 +66,20 @@
             </v-row>
         </v-col>
     </v-row>
-        
+
     <v-row class="justify-center">
+    <div class="info-box">
+        <div class="info-img-box"><img src="imges/regi1.png" alt=""></div>
+        <div class="info-img-box"><img src="imges/regi2.png" alt=""></div>
+        <div class="info-img-box"><img src="imges/regi3.png" alt=""></div>
+    </div>
+    </v-row>>
+        
+    <!-- <v-row class="justify-center">
         <v-col class="col-md-2 col-sm-8 col-12"><v-img src="imges/regi1.png" alt="" class="ss"></v-col> 
         <v-col class="col-md-2 col-sm-8 col-12"><v-img src="imges/regi3.png" alt="" class="ss"></v-col> 
         <v-col class="col-md-2 col-sm-8 col-12"><v-img src="imges/regi2.png" alt="" class="ss"></v-col> 
-    </v-row>
+    </v-row> -->
 
     <v-row class="justify-center">
         <v-col class="col-10 col-sm-8 col-md-6">
@@ -146,6 +155,11 @@
             </v-slide-group>
             </v-sheet>
 
+
+            <v-row class="video jusitfy-conter">
+                    <iframe width="80%" height="300"  src="https://www.youtube.com/embed/6ze0uzECFTE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </v-row>
+
             <v-row class="justify-center">
                 <h3>WaRf</h3>
             </v-row>
@@ -167,7 +181,7 @@
                 min-width="100vw"
                 >
                 <v-card-text>
-                    <v-btn
+                    <!-- <v-btn
                     v-for="icon in icons"
                     :key="icon"
                     class="mx-4 white--text"
@@ -178,7 +192,7 @@
                         {{ icon }}
                     </v-icon>
                     </a>
-                    </v-btn>
+                    </v-btn> -->
                 </v-card-text>
             
                 <v-card-text class="white--text pt-0">
@@ -188,7 +202,7 @@
                 <v-divider></v-divider>
             
                 <v-card-text class="white--text">
-                    {{ new Date().getFullYear() }} — <strong>WaRf</strong>
+                   2020 — <strong>WaRf</strong>
                 </v-card-text>
                 </v-card>
             </v-footer>

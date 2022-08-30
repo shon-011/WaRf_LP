@@ -39,3 +39,14 @@ h2{
     font-size: 19vh!important;
     color: white;
 }
+
+
+.info-box {
+    display: flex;
+    justify-content: center;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+}
